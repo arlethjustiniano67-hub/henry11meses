@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>11 meses con Henry</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 40px;
+      color: white;
+      background: rgba(255, 0, 102, 0.7);
+      font-size: 2em;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #ff0066;
+    }
+    .timeline {
+      text-align: left;
+      padding: 10px;
+    }
+    .month {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 4px solid #ff3399;
+      background: #ffe6f0;
+      border-radius: 8px;
+    }
+    footer {
+      margin: 30px;
+      font-size: 1.2em;
+      color: #fff;
+    }
+    /* Corazones animados */
+    .heart {
+      position: fixed;
+      top: -10px;
+      color: #ff0066;
+      font-size: 24px;
+      animation: fall 5s linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>💖 11 meses contigo, Henry 💖</header>
+
+  <!-- Canción -->
+  <audio id="song" src="https://docs.google.com/uc?export=download&id=1HJIbFltvqM-NZItCj-sW5ovWkj51y_iA" autoplay loop></audio>
+
+  <!-- Poema -->
+  <section>
+    <h2>✨ Poema para ti ✨</h2>
+    <p>
+      Henry, en tu voz encuentro calma,<br>
+      en tus manos aprendo a volver a casa,<br>
+      y en tu mirada nace un universo<br>
+      donde aún los nervios se vuelven amor.<br>
+      Eres mi primer amor, mi primer beso,<br>
+      mi príncipe de telenovela. 💕
+    </p>
+  </section>
+
+  <!-- Línea de tiempo -->
+  <section class="timeline">
+    <h2>📅 Nuestra historia en 11 meses</h2>
+
+    <div class="month">🌸 <b>Mes 1:</b> Pensé que sería un sentimiento pasajero, pero no lo fue.</div>
+    <div class="month">🌹 <b>Mes 2:</b> No creía en el amor, pero contigo decidí darme una oportunidad, aunque con miedo.</div>
+    <div class="month">💫 <b>Mes 3:</b> Enero, la primera vez que sentí tus manos y tu olor. Rompí mis propias reglas por ti.</div>
+    <div class="month">🌼 <b>Mes 4:</b> Me repetía que no era amor, que solo era ilusión, pero mi corazón decía lo contrario.</div>
+    <div class="month">🎂 <b>Mes 5:</b> Mi cumpleaños, lloré toda la noche, supe que estaba enamorada aunque habíamos terminado.</div>
+    <div class="month">☕ <b>Mes 6:</b> Abril nos imos en una cafetería… el efecto Henry seguía ahí, nerviosa como siempre.</div>
+    <div class="month">🍃 <b>Mes 7:</b> Mayo, terminamos en calma, aunque en mi corazón esperaba volver a verte.</div>
+    <div class="month">🌈 <b>Mes 8:</b> Un vacío en mi memoria, pero sé que estabas en mis pensamientos.</div>
+    <div class="month">🏡 <b>Mes 9:</b> Conociste a mis padres. Mi mamá aún pregunta por ti.</div>
+    <div class="month">🕊️ <b>Mes 10:</b> Me enseñaste a vivir en calma, en el presente. “Dale tiempo al tiempo”.</div>
+    <div class="month">💖 <b>Mes 11:</b> Hoy, eres mi primer amor, mi primer beso, mi primer noviecito bonito.</div>
+  </section>
+
+  <!-- Mensaje oculto -->
+  <section>
+    <h2>🌟 Mensaje Especial 🌟</h2>
+    <p style="color:#ff3399; font-weight:bold;">
+      Henry, eres único y especial.<br>
+      Tus burlas ingeniosas a mis teorías me hacen enojar, pero siempre terminas sacándome una sonrisa.  
+      💕
+    </p>
+  </section>
+
+  <footer>
+    Te amo, mi príncipe de telenovela. 💍✨
+  </footer>
+
+  <!-- Script para los corazones -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      heart.innerHTML = "💖";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 500);
+  </script>
+
+</body>
+</html>
